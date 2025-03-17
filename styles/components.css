@@ -1,0 +1,118 @@
+/* Button styles */
+.btn-primary {
+    background: linear-gradient(45deg, #7C4DFF 30%, #9D7FFF 90%);
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    box-shadow: 0 4px 12px rgba(124, 77, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background-color: #ffffff;
+    border: 1px solid #7C4DFF;
+    color: #7C4DFF;
+    transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background-color: #f5f0ff;
+}
+
+/* Badge styles */
+.badge {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: #FF1744;
+    color: white;
+    border-radius: 50%;
+    min-width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}
+
+/* Rating stars */
+.star-filled {
+    color: #FFC400;
+}
+
+.star-empty {
+    color: #E0E0E0;
+}
+
+/* Modal */
+.modal-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: white;
+    border-radius: 8px;
+    padding: 24px;
+    max-width: 90%;
+    max-height: 90%;
+    overflow-y: auto;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* Product Card */
+.product-card {
+    transition: all 0.3s ease;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Search Bar */
+.search-bar {
+    transition: all 0.3s ease;
+}
+
+.search-bar:focus-within {
+    box-shadow: 0 0 0 2px rgba(124, 77, 255, 0.2);
+}
+
+/* Cart Item */
+.cart-item {
+    border-bottom: 1px solid #E0E0E0;
+}
+
+/* Price Filter */
+.price-slider {
+    height: 4px;
+    background-color: #E0E0E0;
+    position: relative;
+}
+
+.price-slider-handle {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #7C4DFF;
+    position: absolute;
+    top: -6px;
+    cursor: pointer;
+}
+
+/* Checkout Form */
+.input-field {
+    transition: border-color 0.3s ease;
+}
+
+.input-field:focus {
+    border-color: #7C4DFF;
+    box-shadow: 0 0 0 2px rgba(124, 77, 255, 0.1);
+}

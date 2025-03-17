@@ -1,0 +1,65 @@
+/* Main styles */
+body {
+    font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+}
+
+.hero-section {
+    background: linear-gradient(45deg, #7C4DFF 30%, #9D7FFF 90%);
+}
+
+.featured-section {
+    background-color: #f9f9f9;
+}
+
+.category-icon {
+    color: #7C4DFF;
+}
+
+.product-card-hover:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 24px rgba(124, 77, 255, 0.25);
+}
+
+.price-text {
+    color: #7C4DFF;
+}
+
+.cart-sidebar {
+    transition: transform 0.3s ease-in-out;
+}
+
+.cart-sidebar.open {
+    transform: translateX(0);
+}
+
+.cart-sidebar.closed {
+    transform: translateX(100%);
+}
+
+.shimmer {
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite;
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: -200% 0;
+    }
+    100% {
+        background-position: 200% 0;
+    }
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
